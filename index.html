@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Troubadour Game Studio — Support</title>
+    <meta name="description" content="Support contact for Troubadour Game Studio." />
+    <style>
+        :root {
+            color-scheme: light dark;
+            --bg: #0b0c0f;
+            --fg: #e8eaed;
+            --muted: #9aa0a6;
+            --accent: #8ab4f8;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+        }
+
+        body {
+            display: grid;
+            place-items: center;
+            font: 16px/1.5 system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+            background: var(--bg);
+            color: var(--fg);
+            padding: 24px;
+        }
+
+        .card {
+            width: min(640px, 100%);
+            border: 1px solid color-mix(in oklab, var(--fg) 10%, transparent);
+            border-radius: 12px;
+            padding: 28px;
+            background: color-mix(in oklab, var(--bg) 92%, #ffffff 8%);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, .25);
+        }
+
+        h1 {
+            font-size: 1.4rem;
+            margin: 0 0 8px;
+        }
+
+        p {
+            margin: 0 0 16px;
+            color: var(--muted);
+        }
+
+        a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        a:hover,
+        a:focus {
+            text-decoration: underline;
+        }
+
+        .email {
+            font-size: 1.1rem;
+            margin-top: 8px;
+            word-break: break-word;
+        }
+
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 1px, 1px);
+            border: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <main class="card" role="main">
+        <h1>Troubadour Game Studio</h1>
+        <p>If you need help or have any questions, contact us at:</p>
+        <p class="email"><a href="mailto:troubadourgamestudio@gmail.com">troubadourgamestudio@gmail.com</a></p>
+        <span class="sr-only">Email link opens your default email client</span>
+    </main>
+</body>
+
+</html>
